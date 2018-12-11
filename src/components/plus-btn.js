@@ -6,7 +6,7 @@ function PlusBtn(props){
     return(
         <div>
             <button className="PlusBtn">
-            <i id="Plus"className="fas fa-plus-circle"></i>
+            <i id="Plus"className="fas fa-plus"></i>
             </button>
         </div>
     )

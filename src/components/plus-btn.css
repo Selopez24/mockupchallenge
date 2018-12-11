@@ -1,7 +1,7 @@
 .PlusBtn {
     margin: 0 ;
     position: fixed;
-    left: 1140px;
+    left: 1240px;
     bottom: 100px;
     background:  transparent;
     padding: 0px;
@@ -11,8 +11,11 @@
 
 
   #Plus{
-    color: rgb(239, 148, 87);
-    font-size: 70px;
+    color: white;
+    font-size: 50px;
+    background-color: rgb(239, 148, 87);
+    border-radius: 100%;
+    padding: 20px;
   }
 
   #Plus:active{
