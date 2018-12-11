@@ -37,6 +37,13 @@ class App extends Component {
           modalVisible: false,
       })
    }
+   handleSubmit = (event) =>{
+    event.preventDefault();
+    console.log(this.input.value, 'submit')
+  }    
+  setInputRef = (element) =>{
+      this.input = element;
+  }
   
   render() {
     return (
@@ -52,7 +59,7 @@ class App extends Component {
               <Switch/>
               <Fav/>
               <Switch/>
-              <Search/>
+              <Search handleSubmit = {this.handleSubmit} setRef = {this.setInputRef}/>
               <Delivered/>
             </FiltersLayOut>
           </LeftPad>
@@ -70,7 +77,7 @@ class App extends Component {
             <CheckBtn/>
             <CheckBtn/>
           </CheckLayout>
-            <SearchInfo/>
+            <SearchInfo handleSubmit = {this.handleSubmit} setRef = {this.setInputRef}/>
             <CardInfo/>
             <CardInfo/>
             <CardInfo/>
