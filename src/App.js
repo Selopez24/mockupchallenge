@@ -26,6 +26,17 @@ import Modal from './components/modal';
 import PlusBtn from './components/plus-btn';
 
 class App extends Component {
+  state = {modalVisible: false,}
+  handleOpenModal = (event) =>{
+      this.setState({
+          modalVisible: true,
+      })
+  }
+  handleCloseModal = (event) =>{
+      this.setState({
+          modalVisible: false,
+      })
+   }
   
   render() {
     return (
@@ -53,10 +64,10 @@ class App extends Component {
           </CheckLayout>
           <NavBar>
             <HomeNav/>
-            <MessagesNav/>
-            <WishNav/>
-            <SettingsNav/>
-            <AccountNav/>
+            <MessagesNav handleOpenModal = {this.handleOpenModal}/>
+            <WishNav handleOpenModal = {this.handleOpenModal}/>
+            <SettingsNav handleOpenModal = {this.handleOpenModal}/>
+            <AccountNav handleOpenModal = {this.handleOpenModal}/>
           </NavBar>
           <InfoLayout>
             <SearchInfo/>
@@ -65,8 +76,17 @@ class App extends Component {
             <CardInfo/>
             <PlusBtn/>
           </InfoLayout>
-         
         </HomeLayOut>
+        {
+          this.state.modalVisible &&
+          <ModalContainer>
+              <Modal handleClick={this.handleCloseModal}>
+                  <h1>
+
+                  </h1>
+              </Modal>
+          </ModalContainer>
+        }
         
       </div>
     );

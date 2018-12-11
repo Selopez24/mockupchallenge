@@ -1,35 +1,35 @@
 .Modal {
-  margin: 0 ;
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
   position: fixed;
-  left: 1150px;
-  bottom: 100px;
-  background:  transparent;
-  padding: 0px;
+  left: 0;
+  right: 0;
+  top: 100px;
+  background:  white;
+  padding: 20px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,.4);
-  z-index: 5;
-  display: flex;
+  z-index: 6;
 }
 
-.Modal-close {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  right: -25px;
-  top: -25px;
-  border-radius: 50%;
+#ModalClose{
+  background-color: #f2f2f2; /* Green */
   border: none;
-  background: #171c30;
-  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   cursor: pointer;
+  color: black;
+  border: 2px solid #555555;
+  transition-duration: 0.4s;
+  margin-left: 10%;
+  border-radius: 10px;
 }
 
-.Modal-close:after {
-  content: "X";
-  font-weight: bold;
-  font-size: 30px;
-}
-
-#Plus{
-  font-size: 40px;
+#ModalClose:hover{
+  background-color: #555555;
+  color: white;
 }

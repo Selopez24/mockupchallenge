@@ -6,7 +6,7 @@ import './logo-layout.css';
 function Logo(props){
     return(
         <div className="logo-layout" >
-            <img src={logo} width={100}/>
+            <img src={logo} width={100} alt="Starkcore"/>
         </div>
     )
 }
