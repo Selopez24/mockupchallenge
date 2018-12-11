@@ -1,0 +1,11 @@
+.InfoLayout{
+    width: 800px;
+    background-color: #e7e7e7;
+    margin-top: 175px;
+    z-index: 2;
+    margin-left: 27.5%;
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+    position: absolute;
+
+}

@@ -1,0 +1,32 @@
+.HomeNav, .SettingsNav, .MessagesNav, .WishNav, .AccountNav {
+    background-color: #f2f2f2; /* Green */
+    border: none;
+    padding: 20px 40px;
+    cursor: pointer;
+    color: #023C56;
+    transition-duration: 0.4s;
+    font-size: 10px; /* Set a font size */
+  
+
+}
+
+  
+.HomeNav:hover, .SettingsNav:hover, .MessagesNav:hover, .WishNav:hover, .AccountNav:hover {
+    background-color: #023C56;
+    color: #EF9457;
+  }
+
+  #btn{
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .HomeNav{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .AccountNav{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }

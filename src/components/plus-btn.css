@@ -1,0 +1,20 @@
+.PlusBtn {
+    margin: 0 ;
+    position: fixed;
+    left: 1140px;
+    bottom: 100px;
+    background:  transparent;
+    padding: 0px;
+    border: none;
+    z-index: 5;
+  }
+
+
+  #Plus{
+    color: rgb(239, 148, 87);
+    font-size: 70px;
+  }
+
+  #Plus:active{
+      border: none;
+  }

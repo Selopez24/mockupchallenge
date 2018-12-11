@@ -1,0 +1,12 @@
+.NavBar {
+  overflow: hidden;
+  background: #e7e7e7;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5%;
+  margin-left: 15%;
+  padding-left: 12%;
+  position: absolute;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  }

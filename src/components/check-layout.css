@@ -1,0 +1,18 @@
+.CheckLayout{
+    padding-left: 100px;
+    z-index: 3;
+    padding-top: 220px;
+}
+
+.CheckBtn{
+    background-color: #EF9457;
+    border: solid;
+    color: white;
+    margin-bottom: 70px;
+    font-size: 40px;
+    border-radius: 95%;
+    border-color: #EF9457;
+    
+
+}
+
