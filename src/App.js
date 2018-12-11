@@ -56,12 +56,6 @@ class App extends Component {
               <Delivered/>
             </FiltersLayOut>
           </LeftPad>
-          <CheckLayout>
-            <CheckBtn/>
-            <CheckBtn/>
-            <CheckBtn/>
-            <CheckBtn/>
-          </CheckLayout>
           <NavBar>
             <HomeNav/>
             <MessagesNav handleOpenModal = {this.handleOpenModal}/>
@@ -70,6 +64,12 @@ class App extends Component {
             <AccountNav handleOpenModal = {this.handleOpenModal}/>
           </NavBar>
           <InfoLayout>
+          <CheckLayout>
+            <CheckBtn/>
+            <CheckBtn/>
+            <CheckBtn/>
+            <CheckBtn/>
+          </CheckLayout>
             <SearchInfo/>
             <CardInfo/>
             <CardInfo/>
